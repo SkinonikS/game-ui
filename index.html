@@ -1,13 +1,131 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" href="/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vite App</title>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Frontend Game UI Sketch</title>
     </head>
     <body>
-        <div id="app"></div>
-        <script type="module" src="/src/main.ts"></script>
+      <div class="background__image"></div>
+      <div class="radar__container"></div>
+      <div class="top__container">
+         <button class="action__button">😄</button>
+         <button class="action__button">😆</button>
+         <button class="action__button">😂</button>
+         <button class="action__button">🤣</button>
+         <button class="action__button">😡</button>
+         <button class="action__button">🤬</button>
+      </div>
+      <div class="bottom__container">
+         <div class="bottom__container__top">
+            <button class="action__button">👋</button>
+            <button class="action__button">🤚</button>
+            <button class="action__button">👉</button>
+            <button class="action__button">🖖</button>
+            <button class="action__button">✌️</button>
+            <button class="action__button">👎</button>
+            <button class="action__button">💪</button>
+            <button class="action__button">👀</button>
+         </div>
+         <hr class="border--horizontal"></hr>
+         <div class="bottom__container__bottom">
+            <div class="inventory__container">
+               <div class="inventory__items">
+                  <button class="inventory__item">
+                     <span class="inventory__item__icon">👓</span>
+                  </button>
+                  <button class="inventory__item">
+                     <span class="inventory__item__icon">🥼</span>
+                  </button>
+                  <button class="inventory__item">
+                     <span class="inventory__item__icon">👙</span>
+                  </button>
+                  <button class="inventory__item">
+                     <span class="inventory__item__icon">👛</span>
+                  </button>
+                  <button class="inventory__item">
+                     <span class="inventory__item__icon">🧵</span>
+                  </button>
+                  <button class="inventory__item">
+                     <span class="inventory__item__icon">💍</span>
+                  </button>
+               </div>
+            </div>
+            <hr class="border--vertical"></hr>
+            <div class="charecters__container">
+               <div class="charecters__items">
+                  <div class="charecters__item">
+                     <div class="charecter__name">Name #1</div>
+                     <hr class="border--horizontal"></hr>
+                     <div class="charecter__image">
+                        <img src="images/amogus.png">
+                     </div>
+                  </div>
+                  <hr class="border--vertical"></hr>
+                  <div class="charecters__item">
+                     <div class="charecter__name">Name #2</div>
+                     <hr class="border--horizontal"></hr>
+                     <div class="charecter__image">
+                        <img src="images/amogus.png">
+                     </div>
+                  </div>
+                  <hr class="border--vertical"></hr>
+                  <div class="charecters__item">
+                     <div class="charecter__name">Name #3</div>
+                     <hr class="border--horizontal"></hr>
+                     <div class="charecter__image">
+                        <img src="images/amogus.png">
+                     </div>
+                  </div>
+                  <hr class="border--vertical"></hr>
+                  <div class="charecters__item">
+                     <div class="charecter__name">Name #4</div>
+                     <hr class="border--horizontal"></hr>
+                     <div class="charecter__image">
+                        <img src="images/amogus.png">
+                     </div>
+                  </div>
+                  <hr class="border--vertical"></hr>
+                  <div class="charecters__item">
+                     <div class="charecter__name">Name #5</div>
+                     <hr class="border--horizontal"></hr>
+                     <div class="charecter__image">
+                        <img src="images/amogus.png">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="log__container">
+               <div class="log__items">
+                  <div class="log__item">
+                     <div class="log__item__timestamp">[10:23:55]: </div>
+                     <div class="log__item__content">Lorem ipsum dolor sit amet.</div>
+                  </div>
+                  <div class="log__item">
+                     <div class="log__item__timestamp">[14:23:55]: </div>
+                     <div class="log__item__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus est, vel sunt aut temporibus sed commodi recusandae non quia! Harum?</div>
+                  </div>
+                  <div class="log__item">
+                     <div class="log__item__timestamp">[15:23:55]: </div>
+                     <div class="log__item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellat aliquid ratione, laborum libero veritatis. Delectus neque vero nulla illum!</div>
+                  </div>
+                  <div class="log__item">
+                     <div class="log__item__timestamp">[15:23:55]: </div>
+                     <div class="log__item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellat aliquid ratione, laborum libero veritatis. Delectus neque vero nulla illum!</div>
+                  </div>
+                  <div class="log__item">
+                     <div class="log__item__timestamp">[15:23:55]: </div>
+                     <div class="log__item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellat aliquid ratione, laborum libero veritatis. Delectus neque vero nulla illum!</div>
+                  </div>
+                  <div class="log__item">
+                     <div class="log__item__timestamp">[15:23:55]: </div>
+                     <div class="log__item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellat aliquid ratione, laborum libero veritatis. Delectus neque vero nulla illum!</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
     </body>
 </html>

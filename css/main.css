@@ -1,0 +1,222 @@
+/* Borders */
+.border--horizontal {
+    display: block;
+    flex: 1 1 100%;
+    height: 0px;
+    max-height: 0px;
+    opacity: .5;
+    border-style: solid;
+    border-width: thin 0 0 0;
+    width: 100%;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: #000;
+}
+
+.border--vertical {
+    flex: 1 1 100%;
+    align-self: stretch;
+    border-width: 0 thin 0 0;
+    display: inline-flex;
+    height: inherit;
+    margin-left: -1px;
+    max-height: 100%;
+    max-width: 0px;
+    vertical-align: text-bottom;
+    width: 0px;
+    opacity: .5;
+    border-style: solid;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: #000;
+}
+
+/* Radar container */
+.radar__container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #000;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-image: url(../images/radar.png);
+    background-size: contain;
+}
+
+/* Top container */
+.top__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.action__button {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    background: transparent;
+    outline: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: 200ms;
+    background: rgba(0, 0, 0, .3);
+}
+
+.action__button:hover {
+    background: rgba(0, 0, 0, .7);
+}
+
+.action__button:not(:first-child) {
+    margin-left: 8px;
+}
+
+/* Bottom container */
+.bottom__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom__container__top {
+    display: flex;
+    align-self: center;
+    margin-bottom: 12px;
+}
+
+.bottom__container__bottom {
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.bottom__container__bottom > .charecters__container {
+    flex: 0 0 auto;
+    width: 50%;
+    height: inherit;
+}
+
+.bottom__container__bottom > .inventory__container {
+    flex: 0 0 auto;
+    width: 25%;
+    height: inherit;
+}
+
+.bottom__container__bottom > .log__container {
+    flex: 0 0 auto;
+    width: 25%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    height: inherit;
+    overflow: auto;
+}
+
+/* Logs */
+.log__items {
+    padding: 12px;
+}
+
+.log__item {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5;
+    letter-spacing: .33px;
+}
+
+.log__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.log__item > .log__item__timestamp {
+    margin-right: 8px;
+}
+
+/* Inventory */
+.inventory__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    color: white;
+}
+
+.inventory__item {
+    display: flex;
+    flex: 0 0 auto;
+    width: 33.333333%;
+    height: 50%;
+    background-color: transparent;
+    transition: 200ms;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    cursor: pointer;
+}
+
+.inventory__item:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.inventory__item__icon {
+    font-size: 64px;
+    user-select: none;
+}
+
+/* Charecters */
+.charecters__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    color: white;
+}
+
+.charecters__item {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.charecter__name {
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.charecter__image {
+    padding: 12px;
+}
+
+.charecter__image > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Background image */
+.background__image {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    filter: blur(10px);
+    z-index: -1;
+}
