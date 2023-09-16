@@ -1,47 +1,77 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+   <div class="page">
+      <div class="header">
+         <div class="radar"></div>
+         <div class="panel">
+            <button class="button">#1</button>
+            <button class="button">#2</button>
+            <button class="button">#3</button>
+            <button class="button">#4</button>
+            <button class="button">#5</button>
+            <button class="button">#6</button>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="upper-footer">
+            <div class="panel">
+               <button class="button">#1</button>
+               <button class="button">#2</button>
+               <button class="button">#3</button>
+               <button class="button">#4</button>
+               <button class="button">#5</button>
+               <button class="button">#6</button>
+               <button class="button">#7</button>
+               <button class="button">#8</button>
+            </div>
+         </div>
+         <div class="bottom-footer">
+            <div class="inventory">
+               <div class="inventory-item">
+                  <div class="inventory-container">👓</div>
+               </div>
+               <div class="inventory-item">
+                  <div class="inventory-container">👓</div>
+               </div>
+               <div class="inventory-item">
+                  <div class="inventory-container">👓</div>
+               </div>
+               <div class="inventory-item">
+                  <div class="inventory-container">👓</div>
+               </div>
+               <div class="inventory-item">
+                  <div class="inventory-container">👓</div>
+               </div>
+               <div class="inventory-item">
+                  <div class="inventory-container">👓</div>
+               </div>
+            </div>
+            <div class="charecters">
+               <div class="charecter">
+                  <div class="charecter-name">Name #1</div>
+                  <img src="https://th.bing.com/th/id/OIP.B8IgVP34xYTTQS6rMkJ_GQHaHK" class="charecter-image" />
+               </div>
+               <div class="charecter">
+                  <div class="charecter-name">Name #2</div>
+                  <img src="https://th.bing.com/th/id/OIP.B8IgVP34xYTTQS6rMkJ_GQHaHK" class="charecter-image" />
+               </div>
+               <div class="charecter">
+                  <div class="charecter-name">Name #3</div>
+                  <img src="https://th.bing.com/th/id/OIP.B8IgVP34xYTTQS6rMkJ_GQHaHK" class="charecter-image"/>
+               </div>
+               <div class="charecter">
+                  <div class="charecter-name">Name #4</div>
+                  <img src="https://th.bing.com/th/id/OIP.B8IgVP34xYTTQS6rMkJ_GQHaHK" class="charecter-image" />
+               </div>
+               <div class="charecter">
+                  <div class="charecter-name">Name #5</div>
+                  <img src="https://th.bing.com/th/id/OIP.B8IgVP34xYTTQS6rMkJ_GQHaHK" class="charecter-image" />
+               </div>
+            </div>
+            <div class="book">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ad?
+            </div>
+         </div>
+      </div>
+   </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
